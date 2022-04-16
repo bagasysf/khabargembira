@@ -4,4 +4,5 @@
     </x-slot>
 
     <x-main-hero></x-main-hero>
+    <x-second-hero></x-second-hero>
 </x-layout>
