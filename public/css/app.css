@@ -436,6 +436,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex {
   display: flex;
 }
+.h-auto {
+  height: auto;
+}
 .h-screen {
   height: 100vh;
 }
@@ -445,8 +448,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-full {
   width: 100%;
 }
+.w-36 {
+  width: 9rem;
+}
+.w-8 {
+  width: 2rem;
+}
 .flex-col {
   flex-direction: column;
+}
+.items-center {
+  align-items: center;
 }
 .justify-end {
   justify-content: flex-end;
@@ -454,15 +466,20 @@ Ensure the default browser behavior of the `hidden` attribute.
 .justify-center {
   justify-content: center;
 }
-.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+.space-y-8 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
-  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
 }
 .space-y-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+.space-y-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
 }
 .overflow-hidden {
   overflow: hidden;
@@ -478,6 +495,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .py-28 {
   padding-top: 7rem;
@@ -499,6 +524,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .font-cinzel {
   font-family: Cinzel;
 }
+.font-dmSerif {
+  font-family: DM Serif Display;
+}
+.font-inter {
+  font-family: Inter;
+}
 .font-august {
   font-family: August Script Bold free;
 }
@@ -506,13 +537,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 .text-base {
   font-size: 1rem;
@@ -522,19 +557,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.75rem;
   line-height: 1rem;
 }
+.font-semibold {
+  font-weight: 600;
+}
 .font-bold {
   font-weight: 700;
 }
 .font-light {
   font-weight: 300;
 }
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-stone-500 {
   --tw-text-opacity: 1;
   color: rgb(120 113 108 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .text-stone-400 {
   --tw-text-opacity: 1;
@@ -545,10 +583,43 @@ Ensure the default browser behavior of the `hidden` attribute.
     }
 @media (min-width: 768px) {
 
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:w-6\/12 {
+    width: 50%;
+  }
+
+  .md\:w-44 {
+    width: 11rem;
+  }
+
+  .md\:w-10 {
+    width: 2.5rem;
+  }
+
+  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
   .md\:space-y-7 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+  }
+
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .md\:px-24 {
@@ -559,6 +630,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .md\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-6xl {
@@ -575,11 +656,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .md\:text-base {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
 }
 @media (min-width: 1024px) {
 
@@ -591,32 +667,24 @@ Ensure the default browser behavior of the `hidden` attribute.
     height: 100vh;
   }
 
-  .lg\:h-96 {
-    height: 24rem;
+  .lg\:w-56 {
+    width: 14rem;
   }
 
-  .lg\:max-h-screen {
-    max-height: 100vh;
+  .lg\:w-12 {
+    width: 3rem;
   }
 
   .lg\:w-6\/12 {
     width: 50%;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
-  .lg\:w-4\/12 {
-    width: 33.333333%;
-  }
-
-  .lg\:w-8\/12 {
-    width: 66.666667%;
-  }
-
   .lg\:w-5\/12 {
     width: 41.666667%;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:w-7\/12 {
@@ -635,6 +703,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     justify-content: center;
   }
 
+  .lg\:space-y-5 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.25rem * var(--tw-space-y-reverse));
+  }
+
   .lg\:px-48 {
     padding-left: 12rem;
     padding-right: 12rem;
@@ -647,6 +721,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   .lg\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 
   .lg\:text-xl {

@@ -17,12 +17,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Cinzel:wght@400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap" rel="stylesheet"> 
     <!-- CDN Fonts -->
     <link href="http://fonts.cdnfonts.com/css/august-script-free" rel="stylesheet">
-    
-  </style>
+    <!-- Feather Icon -->
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 
 <body>
     {{ $slot }}
+
+    <script>
+      feather.replace()
+    </script>
 </body>
 
 </html>
